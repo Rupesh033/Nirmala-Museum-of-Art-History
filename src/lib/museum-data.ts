@@ -1,4 +1,4 @@
-// Lumen Museum of Art History — shared content & data layer
+// Nirmala Museum of Art History — shared content & data layer
 // All artwork, era, tour, and audio-guide data lives here so the five
 // feature components stay presentation-only.
 
@@ -398,8 +398,8 @@ export const audioTracks: AudioTrack[] = [
 ];
 
 export const museumInfo = {
-  name: "Lumen",
-  fullName: "Lumen Museum of Art History",
+  name: "Nirmala",
+  fullName: "Nirmala Museum of Art History",
   tagline: "A journey through five centuries of Western art.",
   hours: "Tue–Sun · 10:00–18:00",
   address: "1 Curator's Walk, Old Quarter",

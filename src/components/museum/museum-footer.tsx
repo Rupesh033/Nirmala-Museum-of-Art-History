@@ -79,7 +79,7 @@ export function MuseumFooter() {
 
         <div className="gold-hr my-8" />
 
-        <div className="flex flex-col items-center justify-between gap-2 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
             © {new Date().getFullYear()} {museumInfo.fullName}. All rights
             reserved.
@@ -87,6 +87,23 @@ export function MuseumFooter() {
           <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground">
             Curatorial · Conservation · Education
           </p>
+        </div>
+
+        <div className="mt-6 flex flex-col items-center gap-2 border-t border-border/50 pt-6 text-center sm:flex-row sm:justify-center">
+          <span className="font-serif text-sm italic text-muted-foreground">
+            Design by
+          </span>
+          <a
+            href="https://www.rupeshvish.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-serif text-sm font-medium tracking-wide text-primary transition-colors hover:text-primary/80 hover:underline"
+          >
+            Rupesh Vishwakarma
+          </a>
+          <span className="hidden font-mono text-[10px] uppercase tracking-[0.25em] text-muted-foreground sm:inline">
+            · Web &amp; UI Designer
+          </span>
         </div>
       </div>
     </footer>

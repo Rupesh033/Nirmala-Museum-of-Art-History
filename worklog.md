@@ -109,3 +109,18 @@ Stage Summary:
 - Lumen Museum of Art History complete and browser-verified end-to-end on desktop and mobile
 - 16 AI-generated images in /public/gallery
 - 5 interactive features all functional, dark gallery theme with gold accents + Playfair serif, sticky header/footer, fully responsive
+
+---
+Task ID: 11
+Agent: orchestrator
+Task: Rebrand museum to "Nirmala" everywhere + add "Design by Rupesh Vishwakarma" credit link in footer
+
+Work Log:
+- Replaced all "Lumen" → "Nirmala" across: src/lib/museum-data.ts (museumInfo.name, fullName), src/app/layout.tsx (title, description, authors, openGraph, twitter), src/app/globals.css (comment)
+- Added designer credit block to src/components/museum/museum-footer.tsx: "Design by" + linked "Rupesh Vishwakarma" (gold, serif, hover underline) → https://www.rupeshvish.com/ (target=_blank, rel=noopener), with "· Web & UI Designer" tag on desktop
+- bun run lint: clean
+- Browser-verified: title "Nirmala Museum of Art History — A Journey...", header logo "Nirmala", footer designer link FOUND (href=https://www.rupeshvish.com/ text=Rupesh Vishwakarma), no "Lumen" remaining anywhere
+- VLM confirmed footer shows 'Nirmala' name and 'Design by Rupesh Vishwakarma' credit
+
+Stage Summary:
+- Branding fully updated to Nirmala; designer credit with live link added to footer, visually verified
